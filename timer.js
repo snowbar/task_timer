@@ -21,7 +21,6 @@
   function timecount(timer) {
 
     timer.innerText = "00:00:00";
-    //sportButton.onclick = rapTime();
     let countInterval = setInterval(countup,1000);
     function countup() {
       if(minute == 60){
@@ -35,14 +34,6 @@
       timer.innerText = addZero(hour) +':'+ addZero(minute) +':'+ addZero(second);
       second++;
     }
-    /*function rapTime(){
-      const rap = document.createElement('span');
-      rap.innerText = addZero(hour) +':'+ addZero(minute) +':'+ addZero(second)+ ' ';
-      sport.appendChild(rap);
-      hour = 0;
-      minute = 0;
-      second = 0;
-    }*/
   }
   function addZero(time) {
     if(time < 10){
